@@ -18,7 +18,7 @@ The motivation behind this project was to create an application utilizing MySQL,
 * Built with Visual Code Studio
 
 ## Code Example
-Here is an example of the note taker application:
+Here is an example of the "Eat Da Burger" application:
 
 ![Burger Demo](./public/assets/images/burgerDemo.png)
 
