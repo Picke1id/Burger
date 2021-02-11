@@ -1,0 +1,13 @@
+-- CREATING DATABASE
+CREATE DATABASE burgers_db;
+
+-- CALLING DATABASE
+USE burgers_db;
+
+-- CREATING BURGER TABLE
+CREATE TABLE burgers(
+	id INT NOT NULL AUTO_INCREMENT,
+    burger_name VARCHAR(125) NOT NULL,
+    devoured BOOLEAN DEFAULT false,
+    PRIMARY KEY (id)
+);
