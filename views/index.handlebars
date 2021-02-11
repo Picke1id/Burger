@@ -1,0 +1,61 @@
+<!-- HERO -->
+<div class="jumbotron jumbotron-fluid" style="background-color: rgba(248, 194, 15, 0.932);">
+  <div class="container" id="hero">
+    <div class="row">
+        <h1 class="display-4 text-center" id="title">EAT DA BURGER!</h1>
+    </div>
+    <img src="/assets/images/burger2.jpg" class="img-fluid" alt="burger image"/>
+  </div>
+</div>
+
+<!-- FORM TO INPUT BURGER NAME -->
+<div id="burgerInput">
+    <p> Give us a crazy burger name to devour! </p>
+    <form class="form-inline" action="/burgers" method="POST">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="burger" class="sr-only">Burger's Name</label>
+            <input type="text" class="form-control" id="burger-name" name="burger_name" placeholder="Burger Name"
+                required />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+</div>
+<br>
+<hr>
+<br>
+
+<!-- CARDS TO PLACE BURGER NAMES FROM DATABASE AND USER INPUT -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header"> Undevoured </div>
+                <ul class="list-group list-group-flush">
+                    {{#each burgers}}
+                    {{#unless this.devoured}}
+                    <li class="list-group-item">{{this.id}}. {{this.burger_name}}
+                        <form id="devour" action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                        <button type="submit" class="btn btn-dark" id="devourBtn">DEVOUR!</button>
+                    </form>
+                    </li>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header"> Devoured </div>
+                <ul class="list-group list-group-flush">
+                    {{#each burgers}}
+                    {{#if this.devoured}}
+                    <li class="list-group-item" id="devoured">
+                        {{this.id}}. {{this.burger_name}}
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
