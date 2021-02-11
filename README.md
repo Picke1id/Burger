@@ -20,7 +20,7 @@ The motivation behind this project was to create an application utilizing MySQL,
 ## Code Example
 Here is an example of the note taker application:
 
-![Burger Demo]()
+![Burger Demo](./public/assets/images/burgerDemo.png)
 
 ## Features
 * User input
