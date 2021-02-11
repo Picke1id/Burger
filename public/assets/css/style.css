@@ -1,0 +1,44 @@
+/* STYLING FOR HERO */
+#hero {
+    text-align: center;
+}
+
+#title {
+    margin: auto;
+    color: rgb(236, 53, 20);
+    font-weight: bold;
+}
+
+img {
+    width: 300px;
+    height: 300px;   
+}
+
+/* STYLING FOR FORM */
+#burgerInput {
+    background-color: white;
+    text-align: center;
+}
+
+.form-inline {
+    justify-content: center;
+}
+
+/* STYLING FOR CARDS */
+.card {
+    width: 30rem;
+}
+
+.card-header {
+    background-color: rgb(236, 53, 20);
+    color: white;
+    font-size: large;
+}
+
+#devour {
+    display: inline;
+}
+
+#devourBtn {
+    float: right;
+}
