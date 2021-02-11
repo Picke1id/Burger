@@ -2,16 +2,17 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Picke1id/Burger.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Imar Pickens",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Picke1id/Burger/issues"
   },
@@ -19,6 +20,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "method-override": "^3.0.0",
     "mysql": "^2.18.1"
   }
 }
