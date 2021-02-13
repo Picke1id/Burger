@@ -1,7 +1,7 @@
 // SETTING DEPENDENCIES
 var express = require("express");
 var exphbs = require("express-handlebars");
-var methodOverride = require("method-Override");
+var methodOverride = require("method-override");
 
 // CREATING APP
 var app = express();
